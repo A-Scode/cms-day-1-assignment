@@ -1,4 +1,9 @@
-
+button{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(23, 162, 255);
+    color: white;
+}
 form.form{
     display: grid;
     grid-template-columns: 1fr;
@@ -8,12 +13,18 @@ form.form{
     min-height: 400px;
 }
 div.holder{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: baseline;
+}
+div.radio_holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 @media (max-width:400px){
     div.holder{
-        flex-direction: column;
+        grid-template-columns: 1fr ;
+        gap: 10px;
     }
 }
